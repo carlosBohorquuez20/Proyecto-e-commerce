@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/1a4c107dd8.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>E commerce</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-container navbar-inverse">
+      <div class="left-nav">
+        <a href="#">STORE</a>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+      </div>
+      <div class="right-nav">
+        <i class="fa-regular fa-moon buttom-dark-mode change-icon"></i>
+        <i class="fa-regular fa-sun buttom-light-mode"></i>
+        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+      </div>
+    </nav>
+  </header>
+  <div class="my-cart">
+    <h2>My Cart</h2>
+    <button class="close-cart">X</button>
+    <div class="cart-empty">
+      <div>
+        <img src="./assets/empty-cart.png" alt="carrito-vacio" class="image-cart">
+      </div>
+      <div class="empty-cart">
+        <h2>Your cart is empty</h2>
+        <p>You can add items to your cart by clicking on the "+" button on the product page.</p>
+      </div>
+    </div>
+    <div class="list-products">
+    </div>
+    <!--
+    <div class="list-products">
+      <div class="box-img-cart">
+        <img src="./assets/card1.png" alt="buso" class="img-cart">
+      </div>
+      <div class="details-list-products">
+        <div>
+          <h3>Hoddies</h3>
+          <span>
+            Stock 10 <span class="orange-text-cart">| $14.00</span>
+          </span>
+          <br><span class="orange-text-cart">Subtotal: <span class="orange-text-cart">$14.00</span></span>
+        </div>
+        <div class="buttons-cart">
+          <button>-</button><span> 1 units </span><button>+</button>
+        </div>
+      </div>
+      <button class="delete-product"><i class="fa-solid fa-trash"></i></button>
+    </div>
+     -->
+    <div class="items-price">
+      <span class="items">0 items</span>
+      <span class="total">$0.00</span>
+    </div>
+    <div class="check-cart">
+      <button class="checkout">Checkout</button>
+    </div>
+  </div>
+  <main>
+    <section class="home" id="home">
+      <div class="home-container">
+        <div class="left-home">
+          <h1>New Sweatshirt
+            <br>COLLECTIONS 2022
+          </h1>
+          <p>Latest arrival of the new Hanes Midweight Crewneck sweatshirt<br>imported from the 2022 series, with a
+            modern design.</p>
+          <span>$14.00</span>
+          <div class="buttons">
+            <button class="btn-discover">Discover</button>
+            <button class="btn-add-to-car">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="right-home">
+          <img src="./assets/home.png" alt="buso" class="home-image">
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="products" id="products">
+    <div class="products-category">
+      <div class="category show-all">
+        <h3>Show All</h3>
+        <span>show all products </span>
+      </div>
+      <div class="category hoddies">
+        <h3>Hoodies</h3>
+        <span>3 pruducts </span>
+      </div>
+      <div class="category shirts">
+        <h3>Shirts</h3>
+        <span>4 products </span>
+      </div>
+      <div class="sweatshirts">
+        <h3>Sweatshirts</h3>
+        <span>4 products </span>
+      </div>
+    </div>
+    <div class="cards">
+      <article class="cards-container">
+        <div class="image-content">
+          <img src="./assets/card1.png" alt="busco rojo" class="image-card image-hoddie">
+        </div>
+        <div class=" price-stock" id="hoddies">
+          <div class="text-price-sctock">
+            <h2 class="price-hoddie">$14.00</h2>
+            <span>| Stock: </span><span class="stock-hoddie">10</span>
+            </span>
+            <h3 class="title-hoddie">Hoddies</h3>
+          </div>
+          <button class="btn-add-plus btn-hoddies"><i class="fa-solid fa-plus"></i></button>
+        </div>
+      </article>
+      <article class="cards-container">
+        <div class="image-content">
+          <img src="./assets/card2.png" alt="buso negro" class="image-card image-shirts">
+        </div>
+        <div class="price-stock" id="shirts">
+          <div class="text-price-sctock">
+            <h2 class="price-shirts">$24.00</h2><span>| Stock: <span class="stock-shirts">15</span></span>
+            <h3 class="title-shirts">Shirts</h3>
+          </div>
+          <button class="btn-add-plus btn-shirts"><i class="fa-solid fa-plus"></i></button>
+        </div>
+      </article>
+      <article class="cards-container">
+        <div class="image-content">
+          <img src="./assets/card3.png" alt="buso blanco" class="image-card">
+        </div>
+        <div class="price-stock" id="sweatshirts">
+          <div class="text-price-sctock">
+            <h2 class="price-sweatshirts">$24.00</h2><span>| Stock: </span><span class="stock-sweatshirts">20</span>
+            <h3 class="title-sweatshirts">Sweatshirts</h3>
+          </div>
+          <button class="btn-add-plus btn-sweatshirts"><i class="fa-solid fa-plus"></i></button>
+        </div>
+      </article>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-information">
+        <h2>Our information</h2>
+        <a href="#">Toluca-Mexico</a>
+      </div>
+      <div class="footer-information">
+        <h2>About Us</h2>
+        <a href="#">Support Center</a>
+        <a href="#">Customer Support</a>
+        <a href="#">About Us</a>
+        <a href="#">Copy Right</a>
+      </div>
+      <div class="footer-information footer-info-product">
+        <h2>Product</h2>
+        <a href="#">Hoodies</a>
+        <a href="#">Shirts</a>
+        <a href="#">Sweatshirts</a>
+      </div>
+      <div class="footer-information">
+        <h2>Social</h2>
+        <div class="footer-information-social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram">
+          </i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-end">
+      <p>© Made by Carlos Bohórquez</p>
+    </div>
+  </footer>
+</body>
+<script src="./javascript/app.js"></script>
+
+</html>
