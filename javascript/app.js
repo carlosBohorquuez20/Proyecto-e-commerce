@@ -63,13 +63,13 @@ buttomDarkMode.addEventListener("click", (e) =>{
   priceStockDark.forEach(element => {
     element.classList.add('price-stock-dark');
   });
-  changeIconDark.innerHTML = `<i class="fa-regular fa-sun buttom-dark-mode change-icon"></i>`
 })
 
 buttomlightMode.addEventListener("click", (e) =>{
   bodyDarkMode.classList.remove('dark-mode-body');
   headerDarkMode.classList.remove('dark-mode-header');
   rightHome.classList.remove('home-right-dark-mode');
+  myCartDarkMode.classList.remove('my-cart-dark-mode');
   footerDarkMode.classList.remove('dark-mode-footer');
   endFooterDarkMode.classList.remove('dark-mode-footer-end');
   cardImageDark.forEach(element => {
